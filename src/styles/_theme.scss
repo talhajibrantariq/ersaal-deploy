@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+:root {
+  --primary-color:$primary-color;
+  --secondary-color: $secondary-color;
+  --primary-text-color: $primary-text-color;
+  --secondary-text-color: $secondary-text-color;
+  --tertiary-text-color: $tertiary-text-color;
+  --tag-primary-color: $tag-primary-color;
+  --tag-secondary-color: $tag-secondary-color;
+  --button-secondary-color: $button-secondary-color;
+  --button-primary-color: $button-primary-color;
+  --border-color: $border-color;
+  --card-color: $card-color;
+  --chat-card-primary-color: $chat-card-primary-color;
+  --chat-card-secondary-color: $chat-card-secondary-color;
+  --header-primary-color:$header-primary-color;
+}

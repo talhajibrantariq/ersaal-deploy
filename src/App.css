@@ -1,0 +1,47 @@
+body {
+  background: radial-gradient(79.40% 69.15% at 65.80% -32.95%, rgba(80, 89, 58, 0.40) 0%, rgba(80, 89, 58, 0.00) 100%), radial-gradient(145.76% 62.24% at -31.42% 74.89%, rgba(80, 89, 58, 0.60) 0%, rgba(80, 89, 58, 0.00) 100%), radial-gradient(130.68% 80.85% at 116.81% 129.95%, rgba(80, 89, 58, 0.80) 0%, rgba(80, 89, 58, 0.00) 100%), #010103;
+}
+html{
+  height:100%;
+  /* width: 100%; */
+  /* overflow: hidden; */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

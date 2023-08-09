@@ -1,0 +1,48 @@
+@import "_variables.scss";
+
+.header-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 12px 0px 5px 0px;
+    width: 100%;
+    color: #FFFFFF;
+    background: rgba(38, 43, 35, 0.30);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+    
+.group-name-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.add-people-div {
+    margin-right: 35px;
+}
+
+.icon-header {
+    width: 45px;
+}
+
+.folder-name {
+    color: #FFF;
+    font-family: $font_family;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.folder-description {
+    color: #D9FF40;
+    font-family: $font_family;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px;
+    margin-left: 10px;
+}

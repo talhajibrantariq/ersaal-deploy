@@ -1,0 +1,300 @@
+@import "_variables.scss";
+
+.sideBar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 28%;
+  height: 95vh;
+  background: linear-gradient(to left, rgba(38, 43, 35, 0.3), rgba(0,0,0,0.3));
+  .create-folder-button-container {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    width:75%;
+    // margin:20px 0px 0px 35px;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 15px;
+    align-self: center;
+    border: 1.233px dashed #898989;
+    .create-folder-button {
+      width: 100%;
+    //   margin-left: 30px;
+      color: #fff;
+      text-align: center;
+      font-family: "Poppins";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background: #262b234d;
+      border: 0px;
+      
+
+    //   margin-top: 20px;
+    }
+  }
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: $secondary-color;
+  padding: 12px 0px 5px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+  .name-and-phone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 40%;
+    .name-container {
+      color: #fff;
+      font-family: "Poppins";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0px;
+    }
+    .phone-container {
+      color: #878c9d;
+      font-family: "Poppins";
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0px;
+    }
+  }
+  .header-buttons {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.billCards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+  width: 100%;
+  padding: 20px 0px 0px 0px;
+  &::-webkit-scrollbar {
+    width: 0.5em; // Set the width to a non-zero value to enable scrollbar
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent; // Make the thumb transparent
+  }
+  .billCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 364.581px;
+    box-shadow: 0px 6.54935884475708px 26.19743537902832px 0px
+      rgba(0, 0, 0, 0.1);
+    border-radius: 26.197px;
+    margin-left: 20px;
+
+    .billCard-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      width: 60%;
+      background: $tertiary-color;
+      padding: 22.5px;
+      border-top-left-radius: 26.197px;
+      border-bottom-left-radius: 26.197px;
+      .text-one {
+        font-family: "Poppins";
+        font-size: 13.099px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 119.5%;
+        color: $tertiary-text-color;
+        margin: 2px;
+      }
+      .text-two {
+        font-family: "Poppins";
+        font-size: 32.747px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 118%;
+        color: $tertiary-text-color;
+        text-align: left;
+        margin: 2px;
+      }
+      .billCard-tags {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        .tags-text {
+          text-align: center;
+          font-family: "Poppins";
+          font-size: 13.099px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 119.5%;
+          color: $tertiary-text-color;
+          border-radius: 26.197px;
+          margin: 5px 0px 0px 5px;
+          border: 0.764px dashed #878c9d;
+          padding: 5px;
+        }
+      }
+    }
+    .billCard-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-end;
+      width: 50%;
+      background: #fff;
+      padding: 22.2px;
+      border-top-right-radius: 26.197px;
+      border-bottom-right-radius: 26.197px;
+      .right-text-one {
+        font-family: "Poppins";
+        font-size: 54.578px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 119.5%;
+        text-align: right;
+        margin: 10px 2px 2px 2px;
+        color: $tertiary-text-color;
+      }
+      .right-text-two {
+        font-family: "Poppins";
+        font-size: 13.099px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 119.5%;
+        text-align: right;
+        color: $tertiary-text-color;
+        margin: 2px;
+      }
+      .right-text-three {
+        font-family: "Poppins";
+        font-size: 13.099px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 119.5%;
+        color: $fifth-text-color;
+        margin: 2px;
+      }
+      .right-text-four {
+        font-family: "Poppins";
+        font-size: 13.099px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 119.5%;
+        color: $tertiary-text-color;
+        margin: 32px 0px 1px 0px;
+      }
+    }
+  }
+}
+
+.folder-container {
+  display: flex;
+  width: 100%;
+  height: 35%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  .folder-header-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 10px 35px;
+    .folder-header-text {
+      font-family: "Poppins";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: #fff;
+      margin: 0px;
+    }
+  }
+  .folders {
+    width: 90%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    scrollbar-width: 0px;
+    &::-webkit-scrollbar {
+      width: 0px; // Set the width to a non-zero value to enable scrollbar
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent; // Make the thumb transparent
+    }
+    .folders-button {
+      background: $tag-primary-color;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 14px;
+      //   width:30%;
+      //   margin-right: 5px;
+      color: #fff;
+      font-family: "Poppins";
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin: 2px 2px 7px 10px;
+      padding: 10px 15px 12px 15px;
+    }
+  }
+  .create-folder-button-container {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    width:75%;
+    margin:20px 0px 0px 35px;
+    justify-content: center;
+    align-items: center;
+    border: 1.233px dashed #898989;
+    .create-folder-button {
+      width: 100%;
+    //   margin-left: 30px;
+      color: #fff;
+      text-align: center;
+      font-family: "Poppins";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background: #262b234d;
+      border: 0px;
+      
+
+    //   margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import "_variables.scss";
+
+.conversation-container {
+    display: flex;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+    flex-direction: column;
+    // background-color: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(14.20138168334961px);
+    background: $chat_container_bg;
+    // margin-top: 30px;
+    // margin-bottom: 30px;
+}
+
+.conversation-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    color: #fff;
+    overflow-y: scroll;
+  /* Hide the scrollbar for webkit-based browsers (e.g., Chrome, Safari) */
+    scrollbar-width: none; 
+}
+
+.conversation-elements::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+%single-conversation-hover {
+    background-color: #D9FF40;
+    padding-right: 20px;
+
+    // Styles for .class1 when .single-conversation is hovered
+    .user-name-text {
+        color: #000000;
+    }
+
+    // Styles for .class2 when .single-conversation is hovered
+    .single-message-text {
+        color: #000000;
+    }
+
+    .time-text {
+        color: #000000;
+    }
+
+}
+
+.single-conversation {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px 10px 10px;
+    width: 95%;
+    &:hover {
+        @extend %single-conversation-hover;
+    }
+
+}
+
+.user-icon {
+    width: 55px;
+    height: 100%;
+}
+
+.user-name-text {
+    margin: 0;
+    color: #FFF;
+    font-family: $font_family;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20.829px;
+}
+
+.single-message-text {
+    margin: 0;
+    color: rgba(235, 235, 245, 0.60);
+    font-family: $font_family;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.042px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+}
+
+.time-text {
+    margin: 0;
+    color: #FFF;
+    text-align: right;
+    font-family: $font_family;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.935px;
+    margin-top: 4px;
+}
+
+.message-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    padding: 10px 10px 10px 10px;
+    background: rgba(0, 0, 0, 0.60);
+    backdrop-filter: blur(85.29032897949219px);
+}
+
+.send-message {
+    width: 90%;
+    border-radius: 31.968px;
+    border: 1.937px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.50);
+    color: #FFF;
+    font-size: 16px;
+    padding: 15px;
+    font-family: $font_family;
+    margin-right: 10px;
+    &::placeholder {
+        color: rgba(235, 235, 245, 0.30);
+        font-family: $font_family;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    &:focus {
+        outline: none; /* Removes the default focus outline */
+        /* Add any other styles you want when the input is focused */
+    }
+
+}
